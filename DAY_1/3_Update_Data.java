@@ -35,6 +35,21 @@ public class Update_Data {
         }catch (SQLException s)
         {
             System.err.println(s);
-        }
+        }finally 
+            {
+                try{
+                    if(c1 != null)
+                    {
+                        c1.close();
+                    }
+                    if(p1 != null)
+                    {
+                        p1.close();
+                    }
+                }catch(SQLException s)
+                    {
+                        System.err.println(s)
+                    }
+            }
     }
 }
