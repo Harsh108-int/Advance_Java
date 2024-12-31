@@ -27,8 +27,7 @@ public class Insert_Data {
             System.err.println(s);
         }finally {
             try {
-                //this is main step
-                //close all resources
+                //Ensure all resources are close
                 if (c1 != null) {
                     c1.close();
                 }
