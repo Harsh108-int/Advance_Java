@@ -13,6 +13,7 @@ public class Establish_Connection {
         Connection c1 = null;
 
         try {
+            //Establish Connection to Database customer
             c1 = DriverManager.getConnection(jdbc,user,password);
             System.out.println("Successfully Connected to DataBase -->[customer]");
         }catch (SQLException s)
