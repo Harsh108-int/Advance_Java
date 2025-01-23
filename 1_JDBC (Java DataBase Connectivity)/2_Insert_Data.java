@@ -19,7 +19,7 @@ public class Insert_Data {
             //create Statement Object
             s1 = c1.createStatement();
             String query = "INSERT INTO user (name,email,password) VALUES ('Harshvardhan','pande@gmail.com','Harsh$1000')";
-            //use for Execute SQL Query
+            //executeUpdate Method is used for execute Query and return int num of row affect  
             int i = s1.executeUpdate(query);
             System.out.println(i + "\tRecord is Inserted Successfully....");
         }catch (SQLException s)
